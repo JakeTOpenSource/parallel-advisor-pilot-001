@@ -58,4 +58,4 @@ reproducible. No trust in the author required.
 
 ## License
 
-TBD.
+MIT. See [LICENSE](LICENSE).
