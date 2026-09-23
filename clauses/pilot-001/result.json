@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "suite_id": "pilot-001",
+  "clause_version": "1.0.0",
+  "track": "M",
+  "seed_registry_hash": "78226a72d8a997ac7edd5f3040d3318dd6481fb386239f7df202626a902b2981",
+  "environment": {
+    "python": "3.12.3",
+    "platform": "linux",
+    "deps_hash": "none"
+  },
+  "started_at": "2026-09-23T18:59:19.536462+00:00",
+  "ended_at": "2026-09-23T18:59:19.536462+00:00",
+  "procedure_hash": "a5077f2f7373dc95d789e6dfd379ac41fcc3f7233e103e154bf8abd4cb34e9e6",
+  "results": [
+    {
+      "test_id": "seeded_rng",
+      "status": "pass",
+      "observed": {
+        "values": [
+          0.6394267984578837,
+          0.025010755222666936,
+          0.27502931836911926,
+          0.22321073814882275,
+          0.7364712141640124
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "test_id": "deterministic_sort",
+      "status": "pass",
+      "observed": {
+        "joined": "alpha,bravo,charlie,delta"
+      },
+      "notes": ""
+    },
+    {
+      "test_id": "numeric_tolerance",
+      "status": "pass",
+      "observed": {
+        "total": -0.012909906458835394
+      },
+      "notes": ""
+    },
+    {
+      "test_id": "canary_reject",
+      "status": "pass",
+      "observed": {
+        "rejected": true
+      },
+      "notes": "negative control: forged input must be rejected"
+    },
+    {
+      "test_id": "procedure_integrity",
+      "status": "pass",
+      "observed": {
+        "seeds_sha256": "78226a72d8a997ac7edd5f3040d3318dd6481fb386239f7df202626a902b2981"
+      },
+      "notes": "tripwire: detects seed tampering"
+    }
+  ]
+}
