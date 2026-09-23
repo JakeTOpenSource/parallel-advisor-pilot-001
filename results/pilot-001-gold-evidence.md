@@ -137,3 +137,15 @@ in this packet, in the contradiction log's status line, and in PROBES.md's
 historical note. verify-pilot-001-v3.zip = v2 with those documentary
 corrections only; every executable file is byte-identical between the two
 bundles.
+
+## Mint
+
+Minted as gold by the judge (Jacob Tiller) on 2026-09-23.
+
+Accepted state:
+- Clause pilot-001 v1.0.0, procedure hash a5077f2f7373dc95d789e6dfd379ac41fcc3f7233e103e154bf8abd4cb34e9e6
+- Four green runs: M1 ea421cc4a39084babb82a4618c386b949079ada07255ffa345ae0e0d7ef0ba48, M2 8e95f7c19fee64c082e9e33090802e0ffa20e098e7058817d4709f35758e0c89, C1 be8a1848c1d4d487803db8be07fb2cc9fe20abe7ccd901a01bbe25906685256c, C2 9d22248e6917bfb0b5ab1668584f187a173f94b7fa34020c25589c618b8c89da
+- Detector v1.2 (6d52f9653439a521e55b45286c83b711aaf36de7646c66ef16b68514d11aa1a6), CLEAN on both run pairs
+- Contradiction log: one cross-platform float delta (5.55e-16), classified DETECTOR-SPEC (primary) / PREMISE (secondary), resolved by judge-approved amendment
+- Independent audits: results/audits/audit-pilot-001.md and results/audits/audit-pilot-001-v2.md, gold claim holds on every executable check
+- Public receipts: https://github.com/JakeTOpenSource/parallel-advisor-pilot-001
