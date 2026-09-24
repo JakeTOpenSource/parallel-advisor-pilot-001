@@ -12,16 +12,16 @@ test suite (seeded RNG, deterministic sorting, float comparison within a
 declared tolerance, a negative-control rejection canary, a seed-file
 integrity tripwire). Two independent tracks ran the identical frozen
 procedure: Track M (Muse, Linux) and Track C (Claude Code, Windows). Both
-matched the sealed expectations. When the tracks disagreed by 5.55e-16 on
+matched the pre-registered expectations. When the tracks disagreed by 5.55e-16 on
 one float, the system flagged it, traced it to platform libm differences,
 classified it, and fixed the checker with the judge's approval instead of
 averaging it away. An independent auditor then re-ran every check, attacked
 the checker itself, found real holes (including one in the advisor's own
 log), and all of it was fixed on the record.
 
-## What the gold mint proves
+## What the pilot demonstrates
 
-1. The answers were locked before anyone ran the test: sealed, and
+1. The answers were locked before anyone ran the test: pre-registered, and
    recomputable by anyone from the public procedure.
 2. Two independent parties ran the identical frozen procedure on different
    machines and operating systems, and both matched the locked answers
@@ -49,12 +49,12 @@ reproducible. No trust in the author required.
 
 ## Roles
 
-- Advisor (Ed): writes clauses, seals expectations, compares outputs,
+- Advisor (Ed): writes clauses, pre-registers expectations, compares outputs,
   investigates contradictions, maintains baselines.
 - Track M: executes public clauses through Muse-side subagents.
 - Track C: executes the identical public clause through Claude Code.
 - Judge (Jacob Tiller): approves clauses and amendments, resolves
-  contradictions, and alone mints gold. Gold requires two green tracks.
+  contradictions, and gives final sign-off. Sign-off requires two passing tracks.
 
 ## License
 
