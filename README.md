@@ -51,7 +51,7 @@ reproducible. No trust in the author required.
 
 - Advisor (Ed): writes clauses, pre-registers expectations, compares outputs,
   investigates contradictions, maintains baselines.
-- Track M: executes public clauses through Muse-side subagents.
+- Track M (Ed): executes public clauses through Muse-side subagents.
 - Track C: executes the identical public clause through Claude Code.
 - Judge (Jacob Tiller): approves clauses and amendments, resolves
   contradictions, and gives final sign-off. Sign-off requires two passing tracks.
